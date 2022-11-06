@@ -24,7 +24,6 @@ input,
 textarea,
 select {
   display: block;
-  width: 100%;
   border-radius: 5px;
   border: 1px solid rgb(156, 156, 156);
   margin: 10px;
@@ -85,25 +84,41 @@ input:focus {
     padding: 10px;
     text-align: left;
 }
-
+/* inputs radio de datos personales */
 .fieldset_div-radio-inputs {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.section_div-button-inputs {
+.hola {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
+}
+  /* inputs checkbox de actividades */
 .fieldset_div-checkbox-inputs {
     display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+/* inputs de las condiciones */
+.section_div-condiciones-inputs {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+.section_div-button {
+    display: flex;
     justify-content: center;
     align-items: center;
-
   }
+.section_div-button > button {
+    margin: 10px;
+}
+.section_div-condiciones-y-notificaciones {
+    padding: 10px;
+    text-align: left;
+}
+
 
 legend {
   background-color: var(--color-borde-header);
