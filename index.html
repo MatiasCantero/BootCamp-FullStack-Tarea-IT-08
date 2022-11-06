@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./static/css/estilos.css" />
+  </head>
+  <body>
+    <main>
+      <!-- div que contiene al formulario formulario y titulo -->
+      <div class="contenedor-form">
+        <!-- titulo -->
+        <header>
+          <h1>Veni al Gym!💪</h1>
+        </header>
+
+        <form action="">
+          <!-- datos personales -->
+          <fieldset class="fieldset datos-personales">
+            <legend>Datos Personales</legend>
+            <div class="form_fieldset_div">
+              <label for="Nombre"
+                >Nombre*: <input required name="Nombre" id="Nombre" type="text"
+              /></label>
+              <label for="Apellido"
+                >Apellido*:
+                <input required id="Apellido" name="Apellido" type="text"
+              /></label>
+              <label for="Documento"
+                >Documento*:
+                <input required id="Documento" name="Documento" type="text"
+              /></label>
+
+              <!-- selects nacionalidad -->
+              <label for="Nacionalidad"
+                >Nacionalidad*:
+                <select name="Nacionalidad" id="Nacionalidad">
+                  <option value="" disabled selected>-Seleccionar-</option>
+
+                  <option value="Argentina">Argentina</option>
+                  <option value="Brasil">Brasil</option>
+                </select></label
+              >
+
+              <!-- Text Area -->
+              <label for="Contanos_un_poco_de_vos">
+                Contanos un poco de vos:
+                <textarea
+                  name="Contanos_un_poco_de_vos"
+                  id="Contanos_un_poco_de_vos"
+                  cols="40"
+                  rows="8"
+                ></textarea>
+              </label>
+
+              <!-- Radio Inputs -->
+              <label>Sexo*:</label>
+              <div class="fieldset_div-radio-inputs">
+                <label for="Femenino">Femenino </label>
+                <input
+                  required
+                  id="Femenino"
+                  name="Sexo"
+                  value="Femenino"
+                  type="radio"
+                />
+                <label for="Masculino">Masculino </label>
+                <input
+                  required
+                  checked
+                  id="Masculino"
+                  name="Sexo"
+                  value="Masculino"
+                  type="radio"
+                />
+                <label for="Otro">Otro </label>
+                <input
+                  required
+                  id="Otro"
+                  name="Sexo"
+                  value="Otro"
+                  type="radio"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <p>...........</p>
+
+          <!-- datos de contacto -->
+          <fieldset class="fieldset contacto">
+            <legend>Datos de Conacto</legend>
+            <div class="form_fieldset_div">
+              <label for="Telefono"
+                >Telefono:
+                <input required name="Nombre" id="Telefono" type="text"
+              /></label>
+              <label for="Correo"
+                >Direccion de correo electronico:
+                <input required id="Correo" name="Apellido" type="email"
+              /></label>
+            </div>
+          </fieldset>
+
+          <p>...........</p>
+
+          <!-- actividades -->
+          <fieldset class="fieldset actividades">
+            <legend>Actividades</legend>
+            <div>
+              <p>Por favor, indicá cuales actividades te interesan</p>
+
+              <label>Sede Palermo:</label>
+              <div class="fieldset_div-checkbox-inputs">
+                <label for="Femenino">Femenino </label>
+                <input
+                  required
+                  id="Femenino"
+                  name="Sexo"
+                  value="Femenino"
+                  type="checkbox"
+                />
+                <label for="Masculino">Masculino </label>
+                <input
+                  required
+                  checked
+                  id="Masculino"
+                  name="Sexo"
+                  value="Masculino"
+                  type="checkbox"
+                />
+                <label for="Otro">Otro </label>
+                <input
+                  required
+                  id="Otro"
+                  name="Sexo"
+                  value="Otro"
+                  type="checkbox"
+                />
+              </div>
+
+              <label>Sede Rosario:</label>
+              <div class="fieldset_div-checkbox-inputs">
+                <label for="Femenino">Femenino </label>
+                <input
+                  required
+                  id="Femenino"
+                  name="Sexo"
+                  value="Femenino"
+                  type="checkbox"
+                />
+                <label for="Masculino">Masculino </label>
+                <input
+                  required
+                  checked
+                  id="Masculino"
+                  name="Sexo"
+                  value="Masculino"
+                  type="checkbox"
+                />
+                <label for="Otro">Otro </label>
+                <input
+                  required
+                  id="Otro"
+                  name="Sexo"
+                  value="Otro"
+                  type="checkbox"
+                />
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- condiciones, novedades,botones Iniciar y Restablecer -->
+          <!-- <section>
+            <div>
+              <label for="Condiciones"> Acepto las Condiciones </label>
+           
+              <label for="novedades">Deseo recibir novedades </label>
+              <input
+                id="novedades"
+                name="Sexo"
+                value="novedades"
+                type="checkbox"
+              />
+            </div>
+            <div class="section_div-button-inputs" >
+              <button>Iniciar Afiliacion</button>
+              <button>Restablecer</button>
+            </div>
+          </section> -->
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
