@@ -86,3 +86,51 @@ bonus3.addEventListener("click", (e) => {
     estilos.setAttribute("href", "./static/css/sin.css");
   }
 });
+
+// cambiando fondo de legend al desencaddenarse el foco
+const inputs = document.getElementsByTagName("input");
+// console.log(inputs);
+
+// efecto focus de los inputs
+for (let inp = 0; inp < inputs.length; inp++) {
+  inputs[inp].addEventListener("focus", () => {
+    if (inp <= 5) {
+      let legend = document.getElementsByTagName("legend");
+      legend[0].style.background = "#2d3c39";
+    } else if ((inp >= 6) & (inp <= 7)) {
+      let legend = document.getElementsByTagName("legend");
+      legend[1].style.background = "#2d3c39";
+    } else {
+      let legend = document.getElementsByTagName("legend");
+      legend[2].style.background = "#2d3c39";
+    }
+  });
+}
+
+// efecto blur de los inputs
+for (let inp = 0; inp < inputs.length; inp++) {
+  inputs[inp].addEventListener("blur", () => {
+    let legend = document.getElementsByTagName("legend");
+    legend[0].style.background = "#4b6963";
+    legend[1].style.background = "#4b6963";
+    legend[2].style.background = "#4b6963";
+  });
+}
+
+// efecto focus textarea
+const textarea = document.getElementsByTagName("textArea");
+for (let inp = 0; inp < textarea.length; inp++) {
+  textarea[inp].addEventListener("focus", () => {
+    console.log("se hizo foco");
+    let legend = document.getElementsByTagName("legend");
+    legend[0].style.background = "#2d3c39";
+  });
+}
+
+// efecto blur  textarea
+for (let inp = 0; inp < textarea.length; inp++) {
+  textarea[inp].addEventListener("blur", () => {
+    let legend = document.getElementsByTagName("legend");
+    legend[0].style.background = "#4b6963";
+  });
+}
