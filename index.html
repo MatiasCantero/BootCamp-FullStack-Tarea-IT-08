@@ -8,10 +8,32 @@
     <link rel="stylesheet" href="./static/css/estilos.css" />
   </head>
   <body>
-       <!-- boton que cambia estilos -->
+       <!-- boton que cambia estilos, como lo pide el enunciado -->
        <div class="section_div-button" >
-        <button id="estilos_btn" >Cambiar estilos</button>
+        <button id="estilos_btn" >Cambiar estilos de forma ordenada</button>
       </div>
+
+      <!-- bonus 1 y bonus 3 -->
+      <div class="Estilos-Bonus-1-to-3" >
+        <div >
+          <p>Estilos Bonus 1:</p> 
+          <div  class="section_div-button">
+
+            <button id="aleatorio_btn" >Cambiar estilos de forma aleatoria</button>
+          </div>
+         
+          <p>Estilos Bonus 3:</p> 
+
+            <select name="Estilos-Bonus-3" id="Estilos-Bonus-3">
+            <option id="OriginalaSelect" value="Original"selected>Original</option>
+            <option id="FuturoaSelect" value="Futuro">Futuro</option>
+            <option id="RetroaSelect" value="Retro">Retro</option>
+            <option id="SinCssaSelect" value="SinCss">Sin css</option>
+          </select>
+
+        </div>
+      </div>
+      
 
     <!-- esta seccion tiene 2 divs que agregan html (estilos tipo futuro y retro), cada uno se activa despendiendo si la hoja de css que te encuentres -->
     <section>
