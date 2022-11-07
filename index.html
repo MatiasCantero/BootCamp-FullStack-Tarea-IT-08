@@ -15,11 +15,11 @@
         <header>
           <h1>Veni al Gym!💪</h1>
         </header>
-
+       
         <form action="">
           <!-- datos personales -->
           <fieldset class="fieldset datos-personales">
-            <legend>Datos Personales</legend>
+            <legend>🙋‍♂️<span>D</span>atos Personales👀</legend>
             <div class="form_fieldset_div">
               <label for="Nombre"
                 >Nombre*: <input required name="Nombre" id="Nombre" type="text"
@@ -58,15 +58,14 @@
               <!-- Radio Inputs -->
               <label>Sexo*:</label>
               <div class="fieldset_div-radio-inputs">
+                  <input
+                    required
+                    id="Femenino"
+                    name="Sexo"
+                    value="Femenino"
+                    type="radio"
+                  />
                 <label for="Femenino">Femenino </label>
-                <input
-                  required
-                  id="Femenino"
-                  name="Sexo"
-                  value="Femenino"
-                  type="radio"
-                />
-                <label for="Masculino">Masculino </label>
                 <input
                   required
                   checked
@@ -75,7 +74,7 @@
                   value="Masculino"
                   type="radio"
                 />
-                <label for="Otro">Otro </label>
+                <label for="Masculino">Masculino </label>
                 <input
                   required
                   id="Otro"
@@ -83,15 +82,18 @@
                   value="Otro"
                   type="radio"
                 />
+                <label for="Otro">Otro </label>
               </div>
             </div>
           </fieldset>
 
-          <p>...........</p>
+          <div>
+            <h1>..........</h1>
+          </div>
 
           <!-- datos de contacto -->
           <fieldset class="fieldset contacto">
-            <legend>Datos de Conacto</legend>
+            <legend>📱<span>D</span>atos de Conacto✉️</legend>
             <div class="form_fieldset_div">
               <label for="Telefono"
                 >Telefono:
@@ -104,95 +106,96 @@
             </div>
           </fieldset>
 
-          <p>...........</p>
+          <div>
+            <h1>..........</h1>
+          </div>
 
           <!-- actividades -->
           <fieldset class="fieldset actividades">
-            <legend>Actividades</legend>
+            <legend>🚴<span>A</span>ctividades🤸</legend>
             <div>
               <p>Por favor, indicá cuales actividades te interesan</p>
 
               <label>Sede Palermo:</label>
               <div class="fieldset_div-checkbox-inputs">
-                <label for="Basquet">Basquet </label>
+                  <input
+                     
+                    id="PalermoBasquet"
+                    name="PalermoBasquet"
+                    value="PalermoBasquet"
+                    type="checkbox"
+                  />
+                <label for="PalermoBasquet">Basquet </label>
                 <input
-                  required
-                  id="Basquet"
-                  name="Sexo"
-                  value="Basquet"
-                  type="checkbox"
-                />
-                <label for="Boxeo">Boxeo </label>
-                <input
-                  required
+                  
                   checked
-                  id="Boxeo"
-                  name="Sexo"
-                  value="Boxeo"
+                  id="PalermoBoxeo"
+                  name="PalermoBoxeo"
+                  value="PalermoBoxeo"
                   type="checkbox"
                 />
-                <label for="Futbol">Futbol </label>
+                <label for="PalermoBoxeo">Boxeo </label>
                 <input
-                  required
-                  id="Futbol"
-                  name="Sexo"
-                  value="Futbol"
+                  
+                  id="PalermoFutbol"
+                  name="PalermoFutbol"
+                  value="PalermoFutbol"
                   type="checkbox"
                 />
-                <label for="Tenis">Tenis </label>
+                <label for="PalermoFutbol">Futbol </label>
                 <input
-                  required
-                  id="Tenis"
-                  name="Sexo"
-                  value="Tenis"
+                  
+                  id="PalermoTenis"
+                  name="PalermoTenis"
+                  value="PalermoTenis"
                   type="checkbox"
                 />
+                <label for="PalermoTenis">Tenis </label>
               </div>
 
               <label>Sede Rosario:</label>
               <div class="fieldset_div-checkbox-inputs">
-                <label for="Basquet">Basquet </label>
                 <input
-                  required
-                  id="Basquet"
-                  name="Sexo"
-                  value="Basquet"
+                  id="RosarioBasquet"
+                  name="RosarioBasquet"
+                  value="RosarioBasquet"
                   type="checkbox"
                 />
-                <label for="Boxeo">Boxeo </label>
-                <input
-                  required
-                  checked
-                  id="Boxeo"
-                  name="Sexo"
-                  value="Boxeo"
-                  type="checkbox"
-                />
-                <label for="Futbol">Futbol </label>
-                <input
-                  required
-                  id="Futbol"
-                  name="Sexo"
-                  value="Futbol"
-                  type="checkbox"
-                />
-                <label for="Tenis">Tenis </label>
-                <input
-                  required
-                  id="Tenis"
-                  name="Sexo"
-                  value="Tenis"
-                  type="checkbox"
-                />
-              </div>
-
+              <label for="RosarioBasquet">Basquet </label>
+              <input
+                
+                checked
+                id="RosarioBoxeo"
+                name="RosarioBoxeo"
+                value="RosarioBoxeo"
+                type="checkbox"
+              />
+              <label for="RosarioBoxeo">Boxeo </label>
+              <input
+                
+                id="RosarioFutbol"
+                name="RosarioFutbol"
+                value="RosarioFutbol"
+                type="checkbox"
+              />
+              <label for="RosarioFutbol">Futbol </label>
+              <input
+                
+                id="RosarioTenis"
+                name="RosarioTenis"
+                value="RosarioTenis"
+                type="checkbox"
+              />
+              <label for="RosarioTenis">Tenis </label>
+            </div>
             </div>
           </fieldset>
 
           <!-- condiciones, novedades,botones Iniciar y Restablecer -->
           <section>
             <!-- terminos, novedades-->
-            <div class="section_div-condiciones-y-notificaciones" >
+            <div class="section_div-condiciones-y-notificaciones">
+                <!-- condiciones -->
               <div class="section_div-condiciones-inputs">
                 <input
                   required
@@ -201,12 +204,12 @@
                   value="Condiciones"
                   type="checkbox"
                 />
-                <label for="Condiciones">Acepto las condiciones </label>
+                <label for="Condiciones">Acepto las condiciones *</label>
               </div>
-
+              <!-- notificaciones -->
               <div class="section_div-condiciones-inputs">
                 <input
-                  required
+                   
                   checked
                   id="Notificaciones"
                   name="Sexo"
@@ -216,6 +219,11 @@
                 <label for="Notificaciones"
                   >Deseo recibir Notificaciones
                 </label>
+                <br />
+              </div>
+              <!-- textos -->
+              <div class="section_div-condiciones-inputs">
+                <p>Campos obligatorios*</p>
               </div>
             </div>
             <!-- botones -->
