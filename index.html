@@ -8,15 +8,78 @@
     <link rel="stylesheet" href="./static/css/estilos.css" />
   </head>
   <body>
+       <!-- boton que cambia estilos -->
+       <div class="section_div-button" >
+        <button id="estilos_btn" >Cambiar estilos</button>
+      </div>
+
+    <!-- esta seccion tiene 2 divs que agregan html (estilos tipo futuro y retro), cada uno se activa despendiendo si la hoja de css que te encuentres -->
+    <section>
+               <!-- futuro -->
+               <div class="futuro" >
+                <div>
+                 <h2> ¿Quienes somos?</h2> <br>
+                 <p>
+                  Fue fundada en julio de 2003 por los ingenieros Martin Eberhard y Marc Tarpenning como Tesla Motors. El nombre de la empresa es un tributo al inventor e ingeniero eléctrico Nikola Tesla.4​ Los siguientes tres empleados fueron Ian Wright, Elon Musk y JB Straubel, quienes fueron nombrados co-fundadores de la compañía.5​6​ Elon Musk ya había fundado varias empresas, era millonario y había tenido la idea de desarrollar baterías para el almacenamiento de energía renovable. Después de reunirse con Eberhard y Wright, Musk invirtió 6.5 millones de dólares en la compañía. Por lo que quedó como presidente de la empresa,7​ Martin Eberhard como CEO y JB Straubel como CTO.
+                 </p>
+                 <br>
+                 <h2>Ultimo en tecnologia</h2>
+                 <br>
+                 <p>
+                  Tesla se fundó para acelerar la transición hacia el transporte sostenible. Tesla en sus inicios redactó su «plan maestro» para influir en la industria desde un punto de vista basado en la energía renovable. Sus objetivos principales eran:
+
+                  1. Comenzar con un proyecto pequeño fabricando pocas unidades a un precio alto. Fue el Tesla Roadster. Demostró que se podía fabricar un vehículo eléctrico de altas prestaciones que desmontaba el mito de que los vehículos eléctricos eran lentos, pesados, feos y con poca autonomía. Tesla llegó a fabricar hasta 500 unidades al año. Tuvo un gran efecto en la industria y Bob Lutz, antiguo presidente de General Motors afirmó que el Tesla Roadster fue el responsable de que iniciaran el programa del Chevy Volt, que a su vez influyó en el programa del Nissan Leaf.
+                  2. Fabricar un vehículo en mayor volumen de unidades y a un precio menos caro. El Tesla Model S demostró que podía competir con las grandes berlinas de lujo. Sobre la misma plataforma Tesla fabricó el Tesla Model X.
+                  3. Vehículo producido en gran volumen y a un precio accesible. Los beneficios que obtuvo Tesla con los modelos anteriores le permitieron abordar el proyecto del Tesla Model 3. Sobre la misma plataforma Tesla fabricó el Tesla Model Y.11​
+                 </p>
+                 <br>
+                 <h2> ¿Porque completar el formulario? </h2>
+                    <p>
+                      De esta forma estaras recibiendo las ultimas noticias y novedades de nuestra empresa
+                    </p>
+         
+                 <br>
+                </div>
+              </div>
+    
+              <!-- retro -->
+              <div class="retro" >
+                <div>
+                  <h2> ¿Quienes somos?</h2>
+                  <p>
+                    Somos una empresa dedicada 100% a la coleccion de autos usados
+                  </p>
+                  <p>
+                    Cuando nos referimos a un auto viejo, generalmente lo llamamos antiguo o de colección, pero la palabra indicada es clásico. Si buscamos su significado en el diccionario encontramos: "Dícese del escritor o de la obra que se considera como modelo en cualquier literatura". o "Muy notable, digno de imitación".
+                  </p>
+                </div> <br>
+                <div>
+                 <h2> ¿Porque completar el formulario? </h2>
+                 <p>
+                  De esta forma estaras recibiendo las ultimas noticias y novedades de nuestra empresa
+                </p>
+                </div>  <br>
+                <div>
+                  <h2> Autos Clasico</h2>
+                  <p>
+                    Automóvil Clásico es el automotor que ha cumplido 50 años y que además de conservar sus especificaciones y características originales de fábrica, presentación y funcionamiento, corresponde a marcas, series y modelos catalogados internacionalmente como tales.
+                  </p>  <br>
+
+                </div>
+              </div>
+    </section>
+
+    <!-- el main contiene todo el html del ejemplo original -->
     <main>
       <!-- div que contiene al formulario formulario y titulo -->
       <div class="contenedor-form">
-        <!-- titulo -->
+            <!-- titulo -->
         <header>
-          <h1>Veni al Gym!💪</h1>
+          <h1 id="titulo_pagina" >Veni al Gym!💪</h1>
         </header>
        
-        <form action="">
+      
+        <form id="form_afiliacion">
           <!-- datos personales -->
           <fieldset class="fieldset datos-personales">
             <legend>🙋‍♂️<span>D</span>atos Personales👀</legend>
@@ -97,11 +160,11 @@
             <div class="form_fieldset_div">
               <label for="Telefono"
                 >Telefono:
-                <input required name="Telefono" id="Telefono" type="text"
+                <input  placeholder="Codigo de area y numero" name="Telefono" id="Telefono" type="text"
               /></label>
               <label for="Correo"
                 >Direccion de correo electronico:
-                <input required id="Correo" name="Correo" type="email"
+                <input required id="Correo" name="Correo" type="email" placeholder="Ej: mail@gmail.com"
               /></label>
             </div>
           </fieldset>
@@ -200,7 +263,7 @@
                 <input
                   required
                   id="Condiciones"
-                  name="Sexo"
+                  name="Condiciones"
                   value="Condiciones"
                   type="checkbox"
                 />
@@ -228,12 +291,15 @@
             </div>
             <!-- botones -->
             <div class="section_div-button">
-              <button>Iniciar Afiliacion</button>
-              <button>Restablecer</button>
+              <button type="submit" >Iniciar Afiliacion</button>
+              <button type="button" id="reestablecer_btn" >Restablecer</button>
             </div>
-          </section>
+          </section>         
         </form>
       </div>
     </main>
+
+
+    <script src="/static/js/js.js"></script>
   </body>
 </html>

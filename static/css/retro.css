@@ -14,16 +14,27 @@
 body {
   margin: 0;
   font-family:  'Poppins', sans-serif;
-  background-color: var(--color-fondo);
+  color: white;
+  font-weight: bolder;
+  background-image: url("../image/retro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 main {
   width: auto;
   margin: 0;
+  /* background-color: var(--color-fondo); */
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+  /* boton cambiar estilos */
+  .estilos {
+    text-align: center;
+  }
 
 /* estilos formulario */        
 input,
@@ -45,16 +56,17 @@ option {
 /* header donde se encuentra el titulo */
 header {
   text-align: center;
-  border-bottom: 15px solid var(--color-borde-header);
-  border-top: 15px solid var(--color-borde-header);
+  border-bottom: 15px solid  rgba(182, 182, 182, 0.5);;;
+  border-top: 15px solid rgba(182, 182, 182, 0.5);;;
   border-right: 15px solid transparent;
   border-left: 15px solid transparent;
-  color: var(--color-fuente-header);
+  color: rgb(150, 148, 148);
   margin-top: 20px;
   font-weight: bolder;
   font-family: 'Roboto', sans-serif;
   line-height: 0%;
   letter-spacing: -3px;
+  
   
 }
 
@@ -73,18 +85,19 @@ input:focus, textarea:focus {
   border: 3px solid black;
   margin-bottom: 20px;
   margin-top: 20px;
-  background-color: var(--color-fondo-sections);
+  background-image:url("../image/pared.jpg");
   padding: 20px;
   border: none;
   border-radius: 3px;
 }
 legend {
-  background-color: var(--color-borde-header);
+  background-color: rgba(1, 16, 17, 0.5);;;
   color: white;
   font-weight: bolder;
   border-radius: 5px;
   padding: 10px;
   text-transform: uppercase;
+  display: none;
 }
 legend > span {
     font-size: 140%;
@@ -124,6 +137,7 @@ input[name="Telefono" i], input[name="Correo" i]  {
   justify-content: left;
   padding: 10px;
   text-align: left;
+  display: none;
 }
 
 /* inputs checkbox de actividades */
@@ -169,20 +183,43 @@ input[type="checkbox" i] {
 
 /* puntos separadores */
 div > h1 {
-  color: var(--color-puntos);
+  color: black;
   text-align: center;
   line-height: 0%;
   font-size: 600%;
   margin-top: 0;
   font-family: 'Times New Roman', Times, serif;
+  display: none;
 }
 
 
-/* cambiando html a normal */
-.futuro {
+/* cambiando html a retro */
+.actividades {
   display:  none;
 }
 
-.retro {
+.futuro {
   display: none;
+}
+
+.retro{
+  background-image: transparent;
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+
+
+.retro > div:hover {
+  background: rgba(100, 100, 100, 0.5);
+  transition: 1s ease;
+}
+
+.retro > div {
+  padding: 20px;
+}
+.retro > div > p {
+  line-height: 56px;
 }
