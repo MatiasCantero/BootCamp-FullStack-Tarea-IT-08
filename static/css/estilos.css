@@ -94,19 +94,16 @@ legend > span {
   text-align: center;
   
 }
-.form_fieldset_div > input {
-  width: 100%;
-    
-  }
 
 
 /* fieldset contacto y datos personales */
-.contacto,
-.datos-personales {
+.contacto, .datos-personales {
   justify-content: center;
   padding: 10px;
   text-align: left;
 }
+
+
 /* fieldset actividades */
 .actividades {
   justify-content: left;
@@ -119,9 +116,7 @@ legend > span {
   justify-content: center;
   align-items: center;
 }
-.hola {
-  display: flex;
-}
+
 /* inputs checkbox de actividades */
 .fieldset_div-checkbox-inputs {
   display: flex;
